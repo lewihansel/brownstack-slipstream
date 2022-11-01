@@ -1,68 +1,26 @@
-import Image from "next/image"
-import styles from "./page.module.css"
-
 export default function Home() {
     return (
-        <div className={styles.container}>
-            <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-                </h1>
-
-                <p className={styles.description}>
-                    Get started by editing{" "}
-                    <code className={styles.code}>app/page.tsx</code>
-                </p>
-
-                <div className={styles.grid}>
-                    <a
-                        href="https://beta.nextjs.org/docs"
-                        className={styles.card}
-                    >
-                        <h2>Documentation &rarr;</h2>
-                        <p>Find in-depth information about Next.js 13</p>
-                    </a>
-
-                    <a
-                        href="https://github.com/vercel/next.js/tree/canary/examples"
-                        className={styles.card}
-                    >
-                        <h2>Examples &rarr;</h2>
-                        <p>Explore the Next.js 13 playground.</p>
-                    </a>
-
-                    <a
-                        href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.card}
-                    >
-                        <h2>Deploy &rarr;</h2>
-                        <p>
-                            Deploy your Next.js site to a public URL with
-                            Vercel.
-                        </p>
-                    </a>
+        <div className="bg-white py-6 sm:py-8 lg:py-12">
+            <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+                <div className="mb-1 flex w-full items-center gap-2">
+                    <p className="font-semibold text-amber-900 lg:text-lg">
+                        Brown Stack
+                    </p>
+                    <p className="rounded-full bg-amber-700 px-2 py-1 text-xs text-white">
+                        SlipStream
+                    </p>
                 </div>
-            </main>
 
-            <footer className={styles.footer}>
-                <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Powered by{" "}
-                    <span className={styles.logo}>
-                        <Image
-                            src="/vercel.svg"
-                            alt="Vercel Logo"
-                            width={72}
-                            height={16}
-                        />
-                    </span>
-                </a>
-            </footer>
+                <h2 className="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+                    Let&apos;s create something cools! 👋🏼
+                </h2>
+
+                <p className="max-w-screen-md text-gray-500 md:text-lg">
+                    This is a section of some simple filler text, also known as
+                    placeholder text. It shares some characteristics of a real
+                    written text but is random or otherwise generated.
+                </p>
+            </div>
         </div>
     )
 }
